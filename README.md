@@ -14,6 +14,8 @@
 
 # 单元测试
 
-[⭐️⭐️⭐️⭐️我翻译的raywenderlich.comiOS单元测试和UI测试基础教程](Swift/iOS Unit Testing and UI Testing Tutorial/README.md)
+[⭐️⭐️⭐️⭐️我翻译的raywenderlich.comiOS单元测试和UI测试基础教程](Swift/iOSUnitTestingandUITestingTutorial/README.md)
 
-⭐️⭐️⭐️⭐️ [我翻译的iOS单元测试和UI测试基础教程](Swift/iOS Unit Testing and UI Testing Tutorial/README.md)
+⭐️⭐️⭐️⭐️ [我翻译的iOS单元测试和UI测试基础教程](Swift/iOSUnitTestingandUITestingTutorial/README.md)
+
+[iOS单元测试和UI测试教程](Swift/iOSUnitTestingandUITestingTutorial/README.md)
