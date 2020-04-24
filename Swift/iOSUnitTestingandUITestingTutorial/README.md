@@ -60,11 +60,11 @@ First 这个缩写描述了一套有效单元测试的简明标准。这些标�
 
 单击左下角的*+*按钮，然后从菜单中选择*New Unit Test Target…*：
 
-[![iOS Unit Testing: Test navigator](TestNavigator1.png)](https://koenig-media.raywenderlich.com/uploads/2016/12/TestNavigator1.png)
+![iOS Unit Testing: Test navigator](TestNavigator1.png)
 
 接受默认名称 *BullsEyeTests* 。 当 *Test bundle* 出现在 Test 导航器中时，单击以在编辑器中打开该 bundle。 如果包没有自动出现，请单击其他导航器之一进行故障排除，然后返回到 Test 导航器。
 
-[![iOS Unit Testing: Template](TestNavigator2-650x290.png)](https://koenig-media.raywenderlich.com/uploads/2016/12/TestNavigator2.png)
+![iOS Unit Testing: Template](TestNavigator2-650x290.png)
 
 默认的模板导入测试框架，*XCTest*，并定义一个`BullsEyeTests`继承`XCTestCase`，用`setUp()`，`tearDown()`以及testExample测试方法。
 
@@ -74,7 +74,7 @@ First 这个缩写描述了一套有效单元测试的简明标准。这些标�
 2. 单击“测试”导航器中的箭头按钮。
 3. 单击装订线中的菱形按钮。
 
-[![iOS Unit Testing: Running Tests](TestNavigator3-480x81.png)](https://koenig-media.raywenderlich.com/uploads/2016/12/TestNavigator3.png)
+![iOS Unit Testing: Running Tests](TestNavigator3-480x81.png)
 
 您也可以通过单击“测试”导航器或装订线中的菱形，运行单个测试方法。
 
@@ -82,7 +82,7 @@ First 这个缩写描述了一套有效单元测试的简明标准。这些标�
 
 当所有测试成功时，菱形将变为绿色并显示选中标记。您可以单击末尾的灰色菱形`testPerformanceExample()`以打开性能结果：
 
-[![iOS Unit Testing: Performance Results](TestNavigator4-650x341.png)](https://koenig-media.raywenderlich.com/uploads/2016/12/TestNavigator4.png)
+![iOS Unit Testing: Performance Results](TestNavigator4-650x341.png)
 
 本教程不需要`testPerformanceExample()`或 `testExample()` ，因此删除它们。
 
@@ -156,7 +156,7 @@ func testScoreIsComputed() {
 
 单击装订线或“测试”导航器中的菱形图标，运行测试。这将构建并运行该App，菱形图标将变为绿色的选中标记！
 
-[![img](succeeded-250x250.png)](https://koenig-media.raywenderlich.com/uploads/2019/01/succeeded.png)
+![img](succeeded-250x250.png)
 
 *注意*：要查看*XCTestAssertions*的完整列表，请转到 [Apple’s Assertions Listed by Category](https://developer.apple.com/documentation/xctest#2870839).
 
@@ -181,20 +181,20 @@ func testScoreIsComputedWhenGuessLTTarget() {
 
 在Breakpoint导航器中，添加*Test Failure Breakpoint*。当测试方法发布故障断言时，这将停止测试运行。
 
-[![iOS Unit Testing: Adding a Test Failure Breakpoint](AddTestFailureBreakpoint.png)](https://koenig-media.raywenderlich.com/uploads/2016/12/AddTestFailureBreakpoint.png)
+![iOS Unit Testing: Adding a Test Failure Breakpoint](AddTestFailureBreakpoint.png)
 
 运行测试，它应该在`XCTAssertEqual`这一行即测试失败的情况下停止。
 
 在调试控制台中检查`sut`和`guess`：
 
-[![iOS Unit Testing: Viewing a Test Failure](TestFailure-1-650x372.png)](https://koenig-media.raywenderlich.com/uploads/2019/01/TestFailure-1.png)
+![iOS Unit Testing: Viewing a Test Failure](TestFailure-1-650x372.png)
 
 `guess`是`targetValue - 5`但是`scoreRound`是105，而不是95！
 
 为了进一步研究，使用正常的调试过程： 在 *when* statement 和 *BullsEyeGame.swift*各设置一个断点, 在 `check(guess:)`里面, 创建 `difference`的地方. 
 然后再次运行测试，并通过`let difference`语句检查App中`difference`的值：
 
-[![iOS Unit Testing: Debug Console](DebugConsole.png)](https://koenig-media.raywenderlich.com/uploads/2016/12/DebugConsole.png)
+![iOS Unit Testing: Debug Console](DebugConsole.png)
 
 
 
@@ -550,7 +550,7 @@ app.launch()
 
 在`testGameStyleSwitch()`中打开新行，然后单击编辑器窗口底部的红色*Record*按钮：
 
-[![iOS Unit Testing: Recording a UI Test](UITest.png)](https://koenig-media.raywenderlich.com/uploads/2016/12/UITest.png)
+![iOS Unit Testing: Recording a UI Test](UITest.png)]
 
 
 
@@ -634,7 +634,7 @@ func test_StartDownload_Performance() {
 
 
 
-[![iOS Unit Testing: Viewing a Performance Result](PerformanceResult-650x291.png)](https://koenig-media.raywenderlich.com/uploads/2019/02/PerformanceResult.png)
+![iOS Unit Testing: Viewing a Performance Result](PerformanceResult-650x291.png)
 
 单击**Set Baseline**以设置参考时间。 然后，再次运行性能测试并查看结果ーー它可能比基线更好，也可能更糟。 **Edit**按钮允许您将基线重置为这个新结果。
 
@@ -648,23 +648,23 @@ func test_StartDownload_Performance() {
 
 要启用代码覆盖率，请**scheme**的 **Test** 操作并选中 **Options** 选项卡下的 **Gather coverage for** 复选框:
 
-[![iOS Unit Testing: Setting the Code Coverage Switch](CodeCoverageSwitch-650x225.png)](https://koenig-media.raywenderlich.com/uploads/2019/02/CodeCoverageSwitch.png)
+![iOS Unit Testing: Setting the Code Coverage Switch](CodeCoverageSwitch-650x225.png)
 
 Run *all* tests (*Command-U*), then open the Report navigator (*Command-9*). Select *Coverage* under the top item in that list:
 
 运行**全部的**测试（*Command-U*），然后打开 Report 导航器（*Command-9*）。选择该列表顶部项目下的*Coverage*：
 
-[![iOS Unit Testing: Code Coverage Report](CoverageReport1-650x241.png)](https://koenig-media.raywenderlich.com/uploads/2019/02/CoverageReport1.png)
+![iOS Unit Testing: Code Coverage Report](CoverageReport1-650x241.png)
 
 单击**展开三角（disclosure triangle）**以查看*SearchViewController.swift*中的函数和闭包列表：
 
-[![iOS Unit Testing: Code Coverage Report](CoverageReport2-650x329.png)](https://koenig-media.raywenderlich.com/uploads/2019/02/CoverageReport2.png)
+![iOS Unit Testing: Code Coverage Report](CoverageReport2-650x329.png)
 
 滑到 `updateSearchResults(_:)` 可以看到覆盖率是 87.9%.
 
 单击此函数的箭头按钮，打开该函数的源文件。 当你把鼠标移到右边栏的覆盖注释上时，部分代码会突出显示绿色或红色:
 
-[![iOS Unit Testing: Good and Bad Code Coverage](CoverageReport4-650x314.png)](https://koenig-media.raywenderlich.com/uploads/2019/02/CoverageReport4.png)
+![iOS Unit Testing: Good and Bad Code Coverage](CoverageReport4-650x314.png)
 
 覆盖率注释显示测试命中每个代码段的次数；未调用的部分以红色突出显示。如您所料，for循环运行了3次，但红色错误路径中的任何内容均未执行。
 
