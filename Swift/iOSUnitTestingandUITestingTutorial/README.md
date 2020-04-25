@@ -554,7 +554,7 @@ app.launch()
 
 
 
-这将在模拟器中以一种模式打开App，将您的交互记录为测试命令。 一旦App加载，点击游戏样式开关的*Slide* segment和顶部的TextField。 然后单击 Xcode 的Record 按钮停止录制。
+这将在模拟器中以一种模式打开App，将您的交互记录为测试命令。 一旦App加载，点击游戏样式开关的*Slide* segment和顶部TextField左边的UILabel。 然后单击 Xcode 的Record 按钮停止录制。
 
 在 `testGameStyleSwitch()`中有以下三行代码:
 
@@ -585,7 +585,7 @@ let slideLabel = app.staticTexts["Get as close as you can to: "]
 let typeLabel = app.staticTexts["Guess where the slider is: "]
 ```
 
-现在您已经有了segmented control中两个button的名称以及两个可能的顶部标签，添加以下代码：
+现在您已经有了segmented control中两个button的名称以及两个可能的顶部Label，添加以下代码：
 
 ```swift
 // then
@@ -606,7 +606,7 @@ if slideButton.isSelected {
 }
 ```
 
-这将检查在单击（`tap()`）分段控件中的每个按钮时是否存在正确的label。 运行测试ー所有断言都应该成功。
+这将检查在单击（`tap()`）分段控件中的每个按钮时Label是否正确更换了文字。 运行测试——所有断言都应该成功。
 
 ## 性能测试
 
@@ -650,8 +650,6 @@ func test_StartDownload_Performance() {
 
 ![iOS Unit Testing: Setting the Code Coverage Switch](CodeCoverageSwitch-650x225.png)
 
-Run *all* tests (*Command-U*), then open the Report navigator (*Command-9*). Select *Coverage* under the top item in that list:
-
 运行**全部的**测试（*Command-U*），然后打开 Report 导航器（*Command-9*）。选择该列表顶部项目下的*Coverage*：
 
 ![iOS Unit Testing: Code Coverage Report](CoverageReport1-650x241.png)
@@ -662,7 +660,7 @@ Run *all* tests (*Command-U*), then open the Report navigator (*Command-9*). Sel
 
 滑到 `updateSearchResults(_:)` 可以看到覆盖率是 87.9%.
 
-单击此函数的箭头按钮，打开该函数的源文件。 当你把鼠标移到右边栏的覆盖注释上时，部分代码会突出显示绿色或红色:
+单击此函数的箭头按钮，打开该函数的源文件。 当你把鼠标移到右边栏的覆盖注释数字0、1、3上时，部分代码会突出显示绿色或红色:
 
 ![iOS Unit Testing: Good and Bad Code Coverage](CoverageReport4-650x314.png)
 
