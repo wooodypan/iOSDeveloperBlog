@@ -1,3 +1,5 @@
+# 让 WKWebView 支持 NSURLProtocol
+
 最近把公司的项目从 UIWebView 迁移到了 WKWebView，因为之前大体上还是遵从了 Apple 的 API 没有过度地去 hack，而且 [WebViewJavascriptBridge](https://github.com/marcuswestin/WebViewJavascriptBridge) 也同样支持 WKWebView，所以迁移过程没有想象中那么痛苦，只要把 UIWebViewDelegate 的方法改成 WKUIDelegate 和 WKNavigationDelegate 对应方法就好了。
 
 

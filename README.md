@@ -6,6 +6,8 @@
 
 [深入理解RunLoop](Objc/深入理解RunLoop/README.md)
 
+[黑幕背后的Autorelease](Objc/黑幕背后的Autorelease/README.md)
+
 # 多线程
 
 [正确使用多线程同步锁@synchronized()](Objc/正确使用多线程同步锁@synchronized()/readme.md)
